@@ -1,0 +1,151 @@
+body{
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.gradient-word{
+        background: -webkit-linear-gradient(#0099ff, rgb(236, 188, 99));
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+}
+.dropdown:hover .trips-t{
+    color: purple;
+}
+.dropdown:hover{
+    border: 2px solid rgb(26, 179, 206);
+    border-radius: 10px;
+    font-weight:800;
+}
+/*----------*/
+.icon-navbar{
+  z-index: 2;
+  position: fixed;
+  top:200px;
+}
+
+.icon-navbar li a i:hover{
+  color: #658499 !important;
+  }
+  /*---------*/
+.carousel-inner img {
+    width: 100%;
+    max-height: 100vb;
+  }
+#copy-btn:hover{
+  background-color: #0567a8;
+}
+#copy-btn:hover + #before-copy{
+    display: inline-block !important;
+  }
+#copy-btn:active + #before-copy{
+  display: none !important;
+}
+#copy-btn:active ~ #after-copy{
+  display: inline-block !important;
+}
+/*------------*/
+.egypt-photo-img , .egypt-photo-img-2{
+    width: 100%;
+    height: 50vb;
+    background-image: url("../images/Asar.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+/*------------*/
+.egypt-photo-img-2{
+  background-image: url("../images/North_2.jpg");
+}
+
+/*------------*/ 
+.gallery-card img{
+  max-height: 200px !important;
+}
+
+.gallery-card {
+  position: relative   !important;
+} 
+.gallery-card::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left:0;
+  height: 0;
+  width: 0;
+
+  background-color: #0567a8;
+  opacity: 0;
+  transition: all 1s;
+  
+}
+.gallery-card:hover::before{
+  opacity: 0.3;
+  width:100%;
+  height: 100%;
+}
+.gallery-card::after{
+  content: "";
+  position: absolute;
+  bottom:0;
+  right:0;
+  height: 0;
+  width: 0;
+
+  background-color: #0567a8;
+  opacity: 0;
+  transition: all 1s;
+  
+}
+.gallery-card:hover::after{
+  opacity: 0.3;
+  width:100%;
+  height: 100%;
+}
+
+/*------------*/
+
+.thank-card{
+  transition: all 0.3s;
+  min-height: 350px;
+}
+.thank-card:hover{
+  transform: scale(0.9);
+}
+.thank-card::before{
+  content: "";
+  position: absolute;
+  top:0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0,0.5);
+  border-radius: 30px;  
+}
+
+
+.thank-card:hover .thank-card-header{
+  transition: all 0.5s;
+  transform: translateY(20px);
+}
+/*------------*/
+.news-card-img{
+  max-height: 225px !important;
+  width: 100% !important;
+}
+.news-card:hover .news-line{
+  width:100px !important;
+  transition: 0.5s;
+}
+
+.news-links a:hover{
+  background-color: rgb(173, 161, 161) !important;
+}
+
+.news-links :nth-child(3):hover{
+  background-color: #0099ff !important;
+}
+
+/*----------*/
+.footer-links a{
+  color: #0567a8 !important;
+}
+.footer-links a:hover{
+  color:#9bcff1;
+}
